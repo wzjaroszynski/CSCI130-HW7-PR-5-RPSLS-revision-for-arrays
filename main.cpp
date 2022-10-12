@@ -164,29 +164,8 @@ char ComputerSelectRPSLK()
     randPick = rand() % 5; // gives us 0 to 4
     //cout << randPick; // uncomment to debug
     
-    // assign random number to letter
-    switch (randPick)
-    {
-        case 0: 
-            randPickChar = 'R';
-            break;
-        case 1: 
-            randPickChar = 'P';
-            break;
-        case 2: 
-            randPickChar = 'S';
-            break;
-        case 3: 
-            randPickChar = 'L';
-            break;
-        case 4: 
-            randPickChar = 'K';
-            break;
-        default:
-            cout << "Error in the function ComputerSelectRPSLK. " << endl;
-    }
-    
-    return randPickChar;
+   char randomselec[5] = { 'R', 'P', 'S', 'L', 'K'};
+  return randomselec[randPick];
 }
 
 string UserWinCelebration()
@@ -200,29 +179,10 @@ string UserWinCelebration()
     randPick = rand() % 5; // gives us 0 to 4
     //cout << randPick; // uncomment to debug
     
-    // assign random number to letter
-    switch (randPick)
-    {
-        case 0: 
-            randPickWin = "You Have Triumphed!";
-            break;
-        case 1: 
-            randPickWin = "You Are the Champion!";
-            break;
-        case 2: 
-            randPickWin = "WOOOO! HOOOO!";
-            break;
-        case 3: 
-            randPickWin = "You Live to Fight Another Day!";
-            break;
-        case 4: 
-            randPickWin = "Yay you are Victorious!";
-            break;
-        default:
-            cout << "Error in the function ComputerSelectRPSLK. " << endl;
-    }
+    string randomselec[5] = { "You Have Triumphed!", "You Are the Champion!",  "WOOOO! HOOOO!", "You Live to Fight Another Day!", "Yay you are Victorious!"};
+  return randomselec[randPick];
     
-    return randPickWin;
+
 } 
 
 
